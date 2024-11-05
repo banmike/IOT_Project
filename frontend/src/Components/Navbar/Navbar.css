@@ -1,0 +1,87 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #759ca0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu li:hover {
+    transform: scale(1.1);
+    color: #ff1f1f;
+}
+
+.nav-menu hr {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff4141;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-menu li:hover hr {
+    opacity: 1;
+    /* Hiện đường gạch chân khi hover */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.profile p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.profile:hover p {
+    transform: scale(1.1);
+    color: #ff4141;
+}

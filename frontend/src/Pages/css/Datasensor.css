@@ -1,0 +1,130 @@
+.datasensor {
+    background: linear-gradient(180deg, #fde1ff, #e1ffea 70%);
+    padding: 40px 10%;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* Khoảng cách giữa các ô tìm kiếm */
+    margin-bottom: 30px;
+}
+
+.datasensor input,
+.datasensor select {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.datasensor input:focus,
+.datasensor select:focus {
+    border-color: #ff4141;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 65, 65, 0.5);
+}
+
+.search button {
+    color: white;
+    background-color: #ff4141;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 14px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.search button:hover {
+    background-color: #ff1f1f;
+    transform: scale(1.05);
+    /* Hiệu ứng phóng to khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.datasensor table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Giúp bảng gọn gàng hơn */
+    border-radius: 10px;
+}
+
+.datasensor th,
+.datasensor td {
+    padding: 16px;
+    /* Tăng padding cho các ô */
+    border: 1px solid #403636;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.datasensor tr {
+    transition: background-color 0.3s ease;
+}
+
+.datasensor tr:hover {
+    background-color: #f7f3f3;
+}
+
+.datasensor tr:nth-child(even) {
+    background-color: #ffecec;
+}
+
+.datasensor th {
+    background-color: #ff4141;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.page {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.page button {
+    background-color: #ff4141;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.page button:hover {
+    background-color: #ff1f1f;
+    transform: scale(1.05);
+    /* Hiệu ứng phóng to khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.page button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.page span {
+    font-size: 1rem;
+    margin: 0 10px;
+    font-weight: bold;
+}

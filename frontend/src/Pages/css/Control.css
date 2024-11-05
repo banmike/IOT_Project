@@ -1,0 +1,34 @@
+.control {
+    margin-top: 40px;
+    margin-left: 40px;
+    background-image: linear-gradient(to bottom right, #A0C4FF, #BDB2FF);
+    /* Màu dịu hơn */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    min-height: 150px;
+    box-shadow: rgba(136, 165, 191, 0.4) -5px 5px, rgba(136, 165, 191, 0.3) -10px 10px, rgba(136, 165, 191, 0.2) -15px 15px, rgba(136, 165, 191, 0.1) -20px 20px, rgba(136, 165, 191, 0.05) -25px 25px;
+}
+
+.led,
+.fan,
+.ac {
+    border: 1px solid transparent;
+    min-width: 160px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 6px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #F0F7FF, #C9E4FF);
+    /* Màu nền dịu hơn */
+    transition: all 0.3s ease;
+}
+
+.led:hover,
+.fan:hover,
+.ac:hover {
+    background-image: linear-gradient(to bottom right, #C9E4FF, #E0F7FF);
+    /* Thay đổi màu nền khi hover */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
+    /* Bóng đổ mạnh hơn khi hover */
+}
